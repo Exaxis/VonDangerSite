@@ -9,3 +9,84 @@ body {
     font-family: "Eurasia";
     src: local("Eurasia"), url(./assets/fonts/Eurasia-Extended-Bold.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: "Klein";
+    src: local("Klein"), url(./assets/fonts/KleinHeadline-BoldOblique.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "KarmaFuture";
+    src: local("KarmaFuture"), url(./assets/fonts/KarmaFuture.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LotsOfDotz";
+    src: local("LotsOfDotz"), url(./assets/fonts/LotsOfDotz.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "VCR";
+    src: local("VCR"), url(./assets/fonts/VCR_OSD_MONO.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "unispace";
+    src: local("unispace"), url(./assets/fonts/unispace.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "NovaMono";
+    src: local("NovaMono"), url(./assets/fonts/NovaMono.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Monofont";
+    src: local("Monofont"), url(./assets/fonts/MONOFONT.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Instruction";
+    src: local("Instruction"), url(./assets/fonts/Instruction.ttf) format("truetype");
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 5;
+    background-color:rgb(0,0,0,0.8);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:#ff2f4b;
+    height: 55px;
+    align-items: center;
+}
+
+.nav-stripes{
+    width: 14vw;
+    height: 100%;
+    background-color: gray;
+    background-image: repeating-linear-gradient(45deg, #000000, #000000 20px, #fefb00 20px, #fefb00 40px);
+    position: absolute;
+    left: 0;
+    opacity:0.6;
+}
+
+.nav-item{
+    font-family:Eurasia;
+    font-weight:700px;
+    font-size:1em;
+    color:rgb(235,235,235);
+    margin-left:30px;
+    margin-right:30px;
+    cursor: pointer;
+}
+
+.nav-bar .nav-item:last-child{
+    margin-right: 150px;
+}
