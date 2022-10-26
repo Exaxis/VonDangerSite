@@ -1,0 +1,18 @@
+<div *ngIf="imageList && imageList.length > 0" class="carousel-container">
+    <img *ngFor="let image of imageList; let i=index" 
+        [src]="image.imgSrc" 
+        [alt]="image.imgAlt"
+        [ngClass]="{'image-active slide-absolute': selectedIndex === i, 'image-prev slide-out-absolute': prevIndex === i}"  
+        class="" 
+    >
+
+    <div *ngIf="indicators" class="carousel-dot-container">
+        <span *ngFor="let dot of imageList; let i=index" 
+            class="dot"
+            [ngClass]="{'active': selectedIndex === i}"
+            (click)="selectImage(i)"
+        >
+        
+        </span>
+    </div>
+</div>

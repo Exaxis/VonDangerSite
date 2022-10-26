@@ -1,5 +1,7 @@
-<div class="nav-bar landing">
-  <!-- <div class="nav-stripes"></div> -->
+<!-- <div class="nav-bar landing">
+  <div class="nav-title-icon-spacer">
+    <img id="nav-title-icon" src="assets/VonDangerLogo2Red.png">
+  </div>
   <div class="nav-item-container">
     <div class="nav-item">Our Crew</div>
     <div class="nav-item">Contact Us</div>
@@ -8,16 +10,16 @@
 <div id="shield-icon">
   <img src="assets/VonDangerShield.png">
 </div>
-<img class="" id="titleBackground" src="assets/herc-1.jpg">
-<div id="mainPageContainer">
+<img class="" id="titleBackground" src="assets/herc-1.webp">
+<div id="mainPageContainer"> -->
   <div class="mainColumnItem screen-fill parallax-group" id="titleItem">
     <div class="tinted-bg-light"></div>
-    <div class="inner" id="titleHolder" style="flex-direction:column">
+    <div class="sticky-header-container" id="titleHolder" style="flex-direction:column">
       <img id="mainLogo" src="assets/VonDangerLogo2Red.png">
-        <div id="tagline-holder" class="clipped-box-TR-BL border-red">
+        <div id="tagline-holder" class="clipped-box-TR-BL border-blue box-interior-glow-blue">
           <div class="tagline" id="tagline">DANGER IS OUR MIDDLE NAME</div>
-          <div class="clipped-box-corner-TR border-red"></div>
-          <div class="clipped-box-corner-BL border-red"></div>
+          <div class="clipped-box-corner-TR border-blue"></div>
+          <div class="clipped-box-corner-BL border-blue"></div>
         </div>
     </div>
 
@@ -28,91 +30,215 @@
   </div>
 
   <div class="mainColumnItem sticky-screen-fill" id="miningItem">
-      <img id="miningBackground" class="background" src="assets/Mining-1.jpg">
-      <div class="inner anchor-top" style="color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; flex-direction:column">
-        <div style="max-width:500px;">
-          <h3>MINING</h3>
-          <h3>AND</h3>
-          <div>
-            <h3>EXTRACTION</h3>  
-            <hr>
+      <img id="miningBackground" class="background" src="assets/Mining-1.webp">
+      <div class="inner">
+        <div class="sticky-header-container" style="color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-start;">
+          <div class="header-box header-box-left clipped-box-TOPS">
+            <div class="fade-in" style="max-width:500px; text-align:left">
+              <h3>MINING AND EXTRACTION</h3>
+              <hr>
+            </div>
+  
+            <div class="fade-in">
+              Hadanite, Quantanium, and Laranite don't grow on trees.
+            </div>
+            <div class="fade-in" style="font-style:italic;">
+              <h2>So we blow up rocks.</h2>
+            </div>
           </div>
- 
-
         </div>
-        <div>
-          Hadanite, Quantanium, and Laranite don't grow on trees.
+        <div class="sticky-body clipped-box-TR-BL border-white">
+          <div style="overflow:hidden">
+            <div id="mining-container">
+              <div class="mining-tag" id="space-tag"><img src="assets/images/space-mining.webp"><span>SPACE</span></div>
+              <div class="mining-tag" id="surface-tag">SURFACE</div>
+              <div class="mining-tag" id="subterranean-tag">SUBTERRANEAN</div>
+            </div>
+          </div>
+          <div class="exploration-paragraph">
+            <div class="fade-in">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+            </div>
+          </div>
+          <div class="clipped-box-corner-TR border-white"></div>
+          <div class="clipped-box-corner-BL border-white"></div>
         </div>
-        <div style="font-style:italic; margin-top:100px;">
-          <h2>So we blow up rocks.</h2>
-        </div>
+        <div class="mining-footer clipped-box-BOTTOMS"></div>
       </div>
   </div>
   <div class="mainColumnItem sticky-screen-fill" id="logistics-item">
-    <img id="logisticsBackground" class="background" src="assets/herc-landed.png">
-    <div class="inner text-outline-bright" style="font-family: 'Eurasia', Arial, Helvetica, sans-serif; flex-flow:column wrap; align-items:flex-end; align-self:end;">
-      <div style="max-width:500px; text-align:end">
-        <h3>LOGISTICS AND TRANSPORT</h3>
-        <hr>
-      </div>
+    <img id="logisticsBackground" class="background" src="assets/images/backgrounds/hullA-1.webp">
+    <div class="inner">
+      <div class="sticky-header-container text-outline-bright" style="font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-end; align-self:end;">
+        <div class="header-box header-box-right clipped-box-TOPS">
+          <div class="fade-in" style="max-width:500px; text-align:end">
+            <h3>LOGISTICS AND TRANSPORTATION</h3>
+            <hr>
+          </div>
 
-      <div>
-        If your supply chain is up against the clock
+          <div class="fade-in">
+            If your supply chain is up against the clock
+          </div>
+          <div class="fade-in" style="font-style:italic;">
+            <h2>Hire people who don't believe in stop signs.</h2>
+          </div>
+        </div>
       </div>
-      <div style="font-style:italic; margin-top:100px;">
-        <h2>Hire people who don't believe in stop signs.</h2>
+      <div class="sticky-body clipped-box-TR-BL border-white">
+        <div class="exploration-video" style="max-width:675px;">
+          <app-carousel class="ship-display-carousel" [imageList]="cargoList" [auto]="true" [indicators]="false" [slideInterval]="4000"></app-carousel>
+        </div>
+        <div class="exploration-paragraph">
+          <div class="fade-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+          </div>
+        </div>
+        <div class="clipped-box-corner-TR border-white"></div>
+        <div class="clipped-box-corner-BL border-white"></div>
       </div>
     </div>
   </div>
 
   <div class="mainColumnItem sticky-screen-fill" id="salvage-item">
-    <img class="background" src="assets/salvage.jpg">
-    <div class="inner text-outline-bright" style="font-family: 'Eurasia', Arial, Helvetica, sans-serif;">
-      <div>
-        <div class="tint clipped-box-TR-BL"></div>
-        <div style="max-width:500px; text-align:left">
-          <h3>SALVAGE AND RECOVERY</h3>
-          <hr>
-        </div>
+    <img class="background" src="assets/salvage.webp">
+    <div class="inner">
+      <div class="sticky-header-container text-outline-bright" style="font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-start;">
+        <div class="header-box header-box-left clipped-box-TOPS">
+          <div class="fade-in" style="max-width:500px; text-align:left">
+            <h3>SALVAGE AND RECOVERY</h3>
+            <hr>
+          </div>
 
-        <div>
-          There's fun to be had in making messes
+          <div class="fade-in">
+            There's fun to be had in making messes
+          </div>
+          <div class="fade-in" style="font-style:italic;">
+            <h2>And money to be made cleaning them up.</h2>
+          </div>
         </div>
-        <div style="font-style:italic; margin-top:100px;">
-          <h2>And money to be made cleaning them up.</h2>
+      </div>
+      <div class="sticky-body clipped-box-TR-BL border-white">
+        <div class="exploration-video" style="max-width:675px;">
+          <app-carousel class="ship-display-carousel" [imageList]="salvageList" [auto]="true" [indicators]="false" [slideInterval]="4000"></app-carousel>
         </div>
+        <div class="exploration-paragraph">
+          <div class="fade-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+          </div>
+        </div>
+        <div class="clipped-box-corner-TR border-white"></div>
+        <div class="clipped-box-corner-BL border-white"></div>
       </div>
     </div>
   </div>
 
-  <div class="mainColumnItem sticky-screen-fill" id="exploration-item" style="display: flex; flex-direction: column; align-content:center;">
-    <img class="background" src="assets/Space-1.jpg" style="transform: scaleX(-1)">
-    <div class="inner" style="color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-end; align-self:end">
-      <div style="max-width:500px; text-align:end">
-        <h3>EXPLORATION AND DISCOVERY</h3>
-        <hr>
+  <div class="mainColumnItem sticky-screen-fill" id="exploration-item">
+    <img class="background" src="assets/Space-1.webp" style="transform: scaleX(-1)">
+    <div class="inner">
+      <div class="sticky-header-container" style="color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-end; align-self:end">
+        <div class="header-box header-box-right clipped-box-TOPS" style="box-shadow: inset 0 0 15px 1px rgba(175, 175, 175, 0.5);">
+          <div class="fade-in" style="max-width:500px; text-align:end;">
+            <h3>EXPLORATION AND DISCOVERY</h3>
+            <hr>
+          </div>
+          <div class="fade-in">
+            No one ever discovered new worlds
+          </div>
+          <div class="fade-in" style="font-style:italic;">
+            <h2>By stopping to ask for directions.</h2>
+          </div>
+        </div>
       </div>
-
-      <div>
-        We keep our clients safe
-      </div>
-      <div style="font-style:italic; margin-top:100px;">
-        <h2>And their enemies unsafe.</h2>
+      <div class="sticky-body clipped-box-TR-BL border-white">
+        <div class="exploration-paragraph">
+          <div class="fade-in">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+          </div>
+        </div>
+        <div class="exploration-video">
+          <video id="explore-video" autoplay muted loop>
+            <source src="assets/video/Exploration.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="clipped-box-corner-TR border-white"></div>
+        <div class="clipped-box-corner-BL border-white"></div>
       </div>
     </div>
   </div>
 
 
-  <div class="parallax-group align-center" style="font-size:2em; color: white" id="group-1">
+  <!-- <div class="parallax-group align-center" style="font-size:2em; color: white" id="group-1">
     <div class="parallax-layer base-layer align-center">
       BASE LAYER PAGE
     </div>
     <div class="parallax-layer mid-layer align-center">
       MID LAYER PAGE
     </div>
+  </div> -->
+
+  <div id="ships-section" class="mainColumnItem screen-fill" style="background-color:#000; justify-content:center; align-items:center;">
+    <div class="background-tint"></div>
+    <div class="background">
+      <img src="assets/images/cockpit.jpg" alt="">
+    </div>
+    <div id="ships-title">WHAT WE FLY</div>
+    <div id="ships-body" class="clipped-box-TOPS box-interior-glow-red">
+      <div id="ships-body-main">Von Danger pilots are subjected to a grueling training course<span style="color:rgb(225,100,125,0.6);">*</span> that covers atmospheric flight dynamics, orbital mechanics, VTOL operations and how to drive stick-shift.</div>
+      <div id="ships-fine-print">*6 hour course with snack breaks</div>
+    </div>
+    <div class="ship-gallery-container">
+      <app-carousel class="ship-display-carousel" [imageList]="shipList1" [auto]="true" [indicators]="false" [slideInterval]="4000" [autoDelay]="200" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-left: 1px solid white; border-top: 1px solid white; border-bottom: 1px solid white;"></app-carousel>
+      <app-carousel class="ship-display-carousel" [imageList]="shipList2" [auto]="true" [indicators]="false" [slideInterval]="4000" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-right: 1px solid white; border-top: 1px solid white; border-bottom: 1px solid white;"></app-carousel>
+    </div>
+    <div class="ship-manufacturer-container clipped-box-BOTTOMS">
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Aegis_Dynamics.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Argo_Astronautics.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/consolidated_outland_color.png" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/CrusaderInd.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Drake_Interplanetary.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/MISC_logo_5.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/OriginJumpworks.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Roberts_Space_Industries.webp" alt=""></div>
+    </div>
   </div>
 
-  <div class="mainColumnItem screen-fill" id="ship-slideshow">
+  <div id="qualifications-section" class="mainColumnItem">
+    <div class="highlight-gradient-top"></div>
+    <div id="qualifications-header" class="clipped-box-TR-BL border-blue box-interior-glow-blue">
+      <div>QUALIFICATIONS</div>
+      <div class="clipped-box-corner-TR border-blue"></div>
+      <div class="clipped-box-corner-BL border-blue"></div>
+    </div>
+    <div id="qualifications-body">
+      <div class="qualifications-body-row">
+        <div class="qualification-tile">
+          <img class="qualification-icon" src="assets/images/qualifications/UEEtrans.png" />
+          <div class="qualification-title">UEE Special Service Award</div>
+        </div>
+        <div class="qualification-tile">
+          <img class="qualification-icon" src="assets/images/qualifications/Covalexshipping_logo.png" />
+          <div class="qualification-title">Covalex Shipping Partner</div>
+        </div>
+        <div class="qualification-tile">
+          <img class="qualification-icon" src="assets/images/qualifications/mt-protection.webp" />
+          <div class="qualification-title">Microtech Commerce Consulting</div>
+        </div>
+      </div>
+      <div class="qualifications-body-row">
+        <div class="qualification-tile">
+          <img class="qualification-icon" src="assets/images/qualifications/certificate.png" />
+          <div class="qualification-title">Theoretical Degree in Physics</div>
+        </div>
+        <div class="qualification-tile">
+          <img class="qualification-icon" src="assets/images/qualifications/whammers.png" />
+          <div class="qualification-title">Whammers Rewards Club Member</div>
+        </div>
+      </div>
+    </div>
+    <div class="highlight-gradient-bottom"></div>
+  </div>
+
+  <!-- <div class="mainColumnItem screen-fill" id="ship-slideshow">
     <div>
       <div style="display: flex; flex-direction: row; justify-content:center"><h2 style="font-family: 'Eurasia', Arial, Helvetica, sans-serif; font-size:5em;">WE FLY EVERYTHING</h2></div>
     <div class="infinite-slider">
@@ -130,13 +256,13 @@
     </div>
       <div style="display: flex; flex-direction: row; justify-content:center"><h2 style="font-family: 'Eurasia', Arial, Helvetica, sans-serif; font-size:5em">IF WE CAN REACH THE PEDALS</h2></div>
     </div>
-  </div>
+  </div> -->
 
   <div class="mainColumnItem sticky-screen-fill" style="display: flex; flex-direction: column; align-content:center;">
     <div class="background">
       <div class="video-grid"></div>
       <video id="video" autoplay muted loop>
-        <source src="assets/Vondangerlite.mp4" type="video/mp4" />
+        <source src="assets/video/Vondangerlite.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="text-glow" style="display: flex; flex-direction: column; align-content:center; flex-flow:column wrap; justify-content: center; color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; z-index:2">
@@ -156,4 +282,4 @@
     </div>
   </div>
 
-</div>
+<!-- </div> -->

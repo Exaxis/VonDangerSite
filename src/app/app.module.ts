@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { CrewComponent } from './crew/crew.component';
+import { CarouselModule } from './carousel/carousel.module';
 
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/landing', pathMatch: 'full' },
@@ -16,13 +17,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LandingComponent,
-    CrewComponent
+    CrewComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
