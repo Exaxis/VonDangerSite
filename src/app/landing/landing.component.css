@@ -11,20 +11,13 @@
 #arrow-down > img{
   max-width: 100%;
 }
-  
-  #mainPageContainer{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 300px;
-  }
 
   .mainColumnItem {
     position:relative;
     width: 100%;
-    border-top-width: 10px;
-    border-top-style: solid;
-    border-top-color:#ffffff;
+    border-bottom-width: 8px;
+    border-bottom-style: solid;
+    border-bottom-color:#ffffff;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -88,8 +81,15 @@
   }
 
   #group-1 > .base-layer {
-    background-color: crimson;
-    opacity: 0.5;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
   }
 
   #group-1{
@@ -119,7 +119,7 @@
   }
   
   .base-layer{
-    transform: translateZ(-400px) scale(2.333);
+    transform: translateZ(-600px) scale(3);
   }
   
   .mid-layer {
@@ -132,6 +132,11 @@
     width: 100%;
     background-color: #1f1f21;
     background-color: var(--global-font-color);
+  }
+
+  .sticky{
+    position: absolute;
+    width: 100%;
   }
 
   .sticky-screen-fill .background{
@@ -196,36 +201,6 @@
     background-size: cover;
   }
 
-  #tagline{
-  }
-
-  #miningDetails{
-
-  }
-
-  #miningItem{
-
-  }
-
-  #tag-hr-1{
-    opacity: 0.7;
-    position: absolute;
-    width: 100px;
-    color: #fff;
-    transform: rotate(45deg);
-    z-index:-1;
-  }
-
-  #tag-hr-2{
-    position: absolute;
-    width: 70px;
-    color: #fff;
-    transform: rotate(45deg);
-    right: 0;
-    top:-5px;
-    opacity: 0.7;
-  }
-
   #tagline-holder{
     position: relative;
     max-width: 750px;
@@ -236,100 +211,6 @@
     /*color: #fefc00;*/
     background-color:#000;
     opacity: 0.7;
-  }
-
-
-  .clipped-box-TR-BL{
-    clip-path: 
-    polygon(
-        calc(100% - 20px) 0,
-        calc(100% + 1px) 20px, 
-        calc(100% + 1px) 100%,
-        20px 100%,
-        0 calc(100% - 20px),
-        0 0
-    )
-  }
-
-  .clipped-box-BOTTOMS{
-    clip-path: 
-    polygon(
-      0 0,
-      calc(100% + 1px) 0,
-      calc(100% + 1px) calc(100% - 20px),
-      calc(100% - 20px) calc(100% + 1px),
-      20px calc(100% + 1px),
-      0 calc(100% - 20px)
-    )
-  }
-
-  .clipped-box-TOPS{
-    clip-path: 
-    polygon(
-        calc(100% - 20px) 0,
-        calc(100% + 1px) 20px, 
-        calc(100% + 1px) 100%,
-        0 100%,
-        0 20px,
-        20px 0
-    )
-  }
-
-  .border-red{
-    border-color:#ff2f4b;
-    border-style:solid;
-    border-width: 1px;
-  }
-
-  .border-white{
-    border-color:#fff;
-    border-style:solid;
-    border-width: 1px;
-  }
-
-  .border-black{
-    border-color:#000;
-    border-style:solid;
-    border-width:1px;
-  }
-
-  .border-blue{
-    border-color:rgb(0, 180, 220);
-    border-style:solid;
-    border-width:1px;
-  }
-
-  .box-interior-glow-red{
-    box-shadow: inset 0px 0px 10px 1px rgb(255, 47, 75);
-  }
-
-  .box-interior-glow-blue{
-    box-shadow: inset 0px 0px 10px 1px rgb(0, 180, 220);
-  }
-
-  .clipped-box-corner-TR{
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateX(50%) translateY(-50%) rotate(45deg);
-  }
-
-  .clipped-box-corner-BL{
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: translateX(-50%) translateY(50%) rotate(45deg);
-  }
-
-  #tagline-holder hr{
-    /*color: #fefc00;*/
-    color:#000;
-    height: 1px;
-    border:none;
   }
 
   #titleHolder{
@@ -384,22 +265,6 @@
       1px 1px 1px #233;
   }
 
-  .tint{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(12,12,13,.5);
-    z-index:-1;
-  }
-
-  .nav-item-container{
-    margin-right:12vw;
-    display: flex;
-    flex-direction: row;
-  }
-
   .tinted-bg-light{
     position: absolute;
     top: 0;
@@ -409,16 +274,6 @@
     background-color: rgba(12,12,13,.3);
     z-index:-1;
   }
-
-  /* #titleBackground{
-    position: fixed;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
-    object-fit: cover;
-    z-index:-1;
-  } */
 
   .video-grid{
     width: 100%;
@@ -432,18 +287,13 @@
     background: transparent url("../../assets/Hero-Banner-Pattern.png") repeat center top;
   }
 
-  .center{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .infinite-slider{
+  /* .infinite-slider{
     position: relative;
     overflow: hidden;
     height: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
+  } 
 
   .slides{
     display:flex;
@@ -463,7 +313,7 @@
   @keyframes infinite-slider {
     0%    { left: 0; }
     100%  { left: -275%; }
-  }
+  } 
 
   #ship-slideshow{
     padding-top: 100px;
@@ -474,12 +324,11 @@
   #ship-slideshow h2{
     color: lightgrey;
     text-align: center;
-  }
+  } */
 
   .ship-gallery-container{
     position: relative;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -505,12 +354,15 @@
   }
 
   .exploration-paragraph{
+    display: flex;
+    flex-direction: column;
     width: 66%;
-    padding: 5px;
+    padding: 1em;
     font-family: 'Eurasia', Arial, Helvetica, sans-serif;
     color:#fff;
     background-color:rgb(100,100,100,0.7);
     flex: 1;
+    gap: 1em;
   }
 
   .exploration-video{
@@ -567,8 +419,8 @@
   .mining-tag{
     display:flex;
     flex-direction: row;
-    color:rgba(255, 255, 255, 0.5);
-    font-size: 4em;
+    color:rgba(255, 255, 255, 0.2);
+    font-size: 5em;
     flex: 1;
     justify-content: flex-end;
     align-items:center;
@@ -618,6 +470,7 @@
     flex-wrap:wrap;
     justify-content:space-around;
     z-index:2;
+    gap: 5px;
     padding:10px;
   }
 
@@ -630,7 +483,7 @@
   }
 
   .manufacturer-icon img{
-    width:180px;
+    width:160px;
   }
 
   #ships-title{
@@ -646,10 +499,10 @@
     margin: 0;
     padding: 15px;
     width: 470px;
-    background-color: rgba(255, 47, 75, 0.4);
+    background-color: rgba(155, 17, 45, 0.9);
     z-index: 2;
     -webkit-backdrop-filter: blur(7px);
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(10px);
   }
 
   .box-interior-glow-red{
@@ -681,8 +534,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:rgb(255,47,75, 0.1);
-    z-index:1;
+    background-color: rgb(255,47,75, 0.1);
+    z-index: 1;
+    filter: brightness(50%) saturate(50%);
+    
   }
 
   #ships-section .background{
@@ -693,15 +548,6 @@
     align-items: center;
     justify-content: center;
     padding:50px 0 150px 0;
-    background:
-linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-background-color: #131313;
-background-size: 20px 20px;
   }
 
   #qualifications-header{
@@ -735,6 +581,7 @@ background-size: 20px 20px;
     align-items: center;
     background-color:rgb(0, 215, 215);
     margin: 5px;
+    box-shadow:0 0 0.5em rgb(0, 215, 215);
   }
 
   .qualification-tile :after{
@@ -762,6 +609,7 @@ background-size: 20px 20px;
   }
 
   .highlight-gradient-top{
+    z-index:1;
     position: absolute;
     top:0;
     left:0;
@@ -777,4 +625,74 @@ background-size: 20px 20px;
     right:0;
     height:100px;
     background-image: linear-gradient(rgb(255, 255, 255, 0), rgb(255,255, 255, 0.15));
+  }
+
+  .qualifications-background{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  }
+
+  .sticky{
+
+  }
+
+  .vignette .top{
+    z-index:1;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:120vh;
+    background-image: linear-gradient(black 0%, black 75%, rgb(255, 255, 255, 0) 100%);
+  }
+
+  .vignette .bottom{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:140vh;
+    background-image: linear-gradient(rgb(255, 255, 255, 0) 0%, black 25%, black 100%);
+  }
+
+  .sticky-screen-fill .vignette{
+    height: 300vh;
+    z-index: 1;
+  }
+
+  #qualifications-section .background{
+    background-color: black;
+  }
+
+  .qualifications-container{
+    position: relative;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .qualification-tile.reflecting::after{
+    content: "";
+    position: absolute;
+    background: rgb(0, 180, 220);
+    top: 65%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(50px) rotateX(40deg) scale(1, 0.20);
+    filter: blur(60px);
   }

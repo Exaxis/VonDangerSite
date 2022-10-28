@@ -381,7 +381,9 @@
     right:0;
 } */
 
-
+body{
+  overflow-x: hidden;
+}
 
 </style>
 
@@ -390,12 +392,14 @@
     <img id="nav-title-icon" src="assets/VonDangerLogo2Red.png">
   </div>
   <div class="nav-item-container">
-    <div class="nav-item">Our Crew</div>
-    <div class="nav-item">Contact Us</div>
+    <div class="nav-item neon-button"><a routerLink="crew">Crew</a></div>
+    <div class="nav-item neon-button"><a>Contact</a></div>
   </div>
 </div>
 <div id="shield-icon">
-  <img src="assets/VonDangerShield.png">
+  <a routerLink="landing">
+    <img src="assets/VonDangerShield.png">
+  </a>
 </div>
 <img class="" id="titleBackground" src="assets/herc-1.webp">
 <div id="mainPageContainer">

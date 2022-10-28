@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { CrewComponent } from './crew/crew.component';
 import { CarouselModule } from './carousel/carousel.module';
+import { HorizontalScrollDirective } from './horizontal-scroll.directive';
 
 const appRoutes: Routes = [
   { path: '',   redirectTo: '/landing', pathMatch: 'full' },
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     AppComponent,
     LandingComponent,
     CrewComponent,
+    HorizontalScrollDirective,
   ],
   imports: [
     BrowserModule,

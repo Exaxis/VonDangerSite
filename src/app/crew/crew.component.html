@@ -1,1 +1,8 @@
-<p>crew works!</p>
+<div class="crew-page-container">
+    <div class="crew-list-container" appHorizontalScroll>
+        <div class="crew-item border-blue box-interior-glow-blue" *ngFor="let member of crewMembers">
+            <img [src]="member.imageUrl" alt="" class="crew-background-image">
+            <div class="member-tag">{{member.tag}}</div>
+        </div>
+    </div>
+</div>

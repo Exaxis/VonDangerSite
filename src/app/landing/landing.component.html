@@ -1,17 +1,4 @@
-<!-- <div class="nav-bar landing">
-  <div class="nav-title-icon-spacer">
-    <img id="nav-title-icon" src="assets/VonDangerLogo2Red.png">
-  </div>
-  <div class="nav-item-container">
-    <div class="nav-item">Our Crew</div>
-    <div class="nav-item">Contact Us</div>
-  </div>
-</div>
-<div id="shield-icon">
-  <img src="assets/VonDangerShield.png">
-</div>
-<img class="" id="titleBackground" src="assets/herc-1.webp">
-<div id="mainPageContainer"> -->
+<div class="parallax-container">
   <div class="mainColumnItem screen-fill parallax-group" id="titleItem">
     <div class="tinted-bg-light"></div>
     <div class="sticky-header-container" id="titleHolder" style="flex-direction:column">
@@ -56,8 +43,17 @@
             </div>
           </div>
           <div class="exploration-paragraph">
+            <div class="fade-in" style="display: flex; flex-direction: column;">
+              <div style="display: flex; gap:15px; font-size: 1em">
+                <div>One-part Geologist.</div>
+              </div>
+              <div style="font-size: 2em;">Two Parts Cowboy.</div>
+            </div>
             <div class="fade-in">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+              Space miners are a special breed. You need an eye sharp enough to spot priceless minerals hiding amongst inert rocks; Coordination and experience to operate deadly mining lasers; And a hand steady enough to extract those valuable metals without turning them into impromptu shrapnel pointed at your life support.
+            </div>
+            <div class="fade-in">
+              Our specialists have trained, studied, and wiped off their soot-covered helmets enough times to not only excel at this intersection of science and art, but they can do so while dealing with the isolation of space, the unpredictable environments of hostile planets, and the claustrophobic pressure of the deepest caves.
             </div>
           </div>
           <div class="clipped-box-corner-TR border-white"></div>
@@ -85,14 +81,22 @@
         </div>
       </div>
       <div class="sticky-body clipped-box-TR-BL border-white">
+        <div class="exploration-paragraph">
+          <div class="fade-in" style="display: flex; flex-direction: column;">
+            <div>Planning, Optimizing, and Projecting are key to being reliable.</div>
+            <div style="font-size: 2em;">So is going fast.</div>
+          </div>
+          <div class="fade-in">
+            Your business needs things. Vehicles, parts, raw materials - you need them to be in the right place at the right time.
+          </div>
+          <div class="fade-in">
+            Successfully accomplishing this requires speed, expertise in moving a variety of freight, and having the muscle to fend off anyone trying to bleed your bottom line. Our professionals have the die-hard mindset to do whatever it takes to get the job done, and a list of moving violations to prove that we won't be late.
+          </div>
+        </div>
         <div class="exploration-video" style="max-width:675px;">
           <app-carousel class="ship-display-carousel" [imageList]="cargoList" [auto]="true" [indicators]="false" [slideInterval]="4000"></app-carousel>
         </div>
-        <div class="exploration-paragraph">
-          <div class="fade-in">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
-          </div>
-        </div>
+
         <div class="clipped-box-corner-TR border-white"></div>
         <div class="clipped-box-corner-BL border-white"></div>
       </div>
@@ -122,8 +126,14 @@
           <app-carousel class="ship-display-carousel" [imageList]="salvageList" [auto]="true" [indicators]="false" [slideInterval]="4000"></app-carousel>
         </div>
         <div class="exploration-paragraph">
+          <div class="fade-in" style="display: flex; flex-direction: column;">
+            <div style="font-size: 2em;">Dirty jobs are just as important as clean ones.</div>
+          </div>
           <div class="fade-in">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+            Recycling is a vital part of the material processing pipeline. Old ships have equipment to be repurposed, wreckage has valuable scrap to be salvaged, and abandoned vessels need to be reclaimed.
+          </div>
+          <div class="fade-in">
+            We see the value inherent in the discarded and derelict, and we have the tools and the know-how to safely recover it. Our specialists can quickly differentiate the scrap from the treasure, helping you pick up the pieces when luck wasn't on your side.
           </div>
         </div>
         <div class="clipped-box-corner-TR border-white"></div>
@@ -136,7 +146,7 @@
     <img class="background" src="assets/Space-1.webp" style="transform: scaleX(-1)">
     <div class="inner">
       <div class="sticky-header-container" style="color:rgb(235,235,235); font-family: 'Eurasia', Arial, Helvetica, sans-serif; align-items:flex-end; align-self:end">
-        <div class="header-box header-box-right clipped-box-TOPS" style="box-shadow: inset 0 0 15px 1px rgba(175, 175, 175, 0.5);">
+        <div class="header-box header-box-right clipped-box-TOPS">
           <div class="fade-in" style="max-width:500px; text-align:end;">
             <h3>EXPLORATION AND DISCOVERY</h3>
             <hr>
@@ -151,8 +161,15 @@
       </div>
       <div class="sticky-body clipped-box-TR-BL border-white">
         <div class="exploration-paragraph">
+          <div class="fade-in" style="display: flex; flex-direction: column;">
+            <div>The undeniable truth of discovery is that</div>
+            <div style="font-size: 2em;">Second place is the first loser.</div>
+          </div>
           <div class="fade-in">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis elit facilisis ligula tempus viverra. Aliquam quis vestibulum justo, non imperdiet tellus. In hac habitasse platea dictumst. Pellentesque sit amet imperdiet ligula. Nullam varius lectus orci, ac accumsan dui blandit ut. Aliquam lobortis erat dui, non scelerisque nisl tempus vitae. Morbi gravida, mi vel lobortis pretium, dui risus efficitur est, eu iaculis nisl risus nec mauris. Integer tempus dolor ac nisi gravida fringilla. Duis tempor odio a nulla lacinia venenatis. 
+            There's a vast and beautiful universe out there teeming with never-before seen vistas, hidden treasure, and bountiful resources. If you want to get your hands on any of it, there's no time to second-guess yourself.
+          </div>
+          <div class="fade-in">
+            We've been pushing boundaries since our inception, always believing that the frontier of discovery is the most worthwhile - and exciting - place to be. That's why we're always pushing the boundaries of our technology, our experience, and our better judgement.
           </div>
         </div>
         <div class="exploration-video">
@@ -176,7 +193,37 @@
     </div>
   </div> -->
 
-  <div id="ships-section" class="mainColumnItem screen-fill" style="background-color:#000; justify-content:center; align-items:center;">
+  <div class="parallax-group align-center mainColumnItem" style="z-index:-1">
+    <div class="parallax-layer base-layer align-center">
+      <div class="background-tint"></div>
+      <div class="background">
+        <img src="assets/images/cockpit.jpg" alt="">
+      </div>
+    </div>
+    <div class="parallax-layer mid-layer align-center" style="flex-direction:column">
+      <div id="ships-title" class="text-outline">WHAT WE FLY</div>
+    <div id="ships-body" class="clipped-box-TOPS box-interior-glow-red">
+      <div id="ships-body-main">Von Danger pilots are subjected to a grueling training course<span style="color:rgb(225,100,125,0.6);">*</span> that covers atmospheric flight dynamics, orbital mechanics, VTOL operations and how to drive stick-shift.</div>
+      <div id="ships-fine-print">*6 hour course with snack breaks</div>
+    </div>
+    <div class="ship-gallery-container">
+      <app-carousel class="ship-display-carousel" [imageList]="shipList1" [auto]="true" [indicators]="false" [slideInterval]="4000" [autoDelay]="200" style="border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-left: 1px solid white; border-top: 1px solid white; border-bottom: 1px solid white;"></app-carousel>
+      <app-carousel class="ship-display-carousel" [imageList]="shipList2" [auto]="true" [indicators]="false" [slideInterval]="4000" style="border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-right: 1px solid white; border-top: 1px solid white; border-bottom: 1px solid white;"></app-carousel>
+    </div>
+    <div class="ship-manufacturer-container clipped-box-BOTTOMS">
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Aegis_Dynamics.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Argo_Astronautics.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/consolidated_outland_color.png" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/CrusaderInd.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Drake_Interplanetary.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/MISC_logo_5.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/OriginJumpworks.webp" alt=""></div>
+      <div class="manufacturer-icon"><img src="assets/images/manufacturers/Roberts_Space_Industries.webp" alt=""></div>
+    </div>
+    </div>
+  </div>
+
+  <!-- <div id="ships-section" class="mainColumnItem screen-fill" style="background-color:#000; justify-content:center; align-items:center;">
     <div class="background-tint"></div>
     <div class="background">
       <img src="assets/images/cockpit.jpg" alt="">
@@ -200,42 +247,52 @@
       <div class="manufacturer-icon"><img src="assets/images/manufacturers/OriginJumpworks.webp" alt=""></div>
       <div class="manufacturer-icon"><img src="assets/images/manufacturers/Roberts_Space_Industries.webp" alt=""></div>
     </div>
-  </div>
+  </div> -->
 
-  <div id="qualifications-section" class="mainColumnItem">
-    <div class="highlight-gradient-top"></div>
-    <div id="qualifications-header" class="clipped-box-TR-BL border-blue box-interior-glow-blue">
-      <div>QUALIFICATIONS</div>
-      <div class="clipped-box-corner-TR border-blue"></div>
-      <div class="clipped-box-corner-BL border-blue"></div>
+  <div id="qualifications-section" class="mainColumnItem sticky-screen-fill">
+    <div class="vignette">
+      <div class="top"></div>
+      <div class="bottom"></div>
     </div>
-    <div id="qualifications-body">
-      <div class="qualifications-body-row">
-        <div class="qualification-tile">
-          <img class="qualification-icon" src="assets/images/qualifications/UEEtrans.png" />
-          <div class="qualification-title">UEE Special Service Award</div>
+    <div class="background">
+      <!-- <div class="highlight-gradient-top"></div>
+
+      <div class="qualifications-background"></div> -->
+      <div class="qualifications-container">
+        <div id="qualifications-header" class="clipped-box-TR-BL border-blue box-interior-glow-blue">
+          <div>QUALIFICATIONS</div>
+          <div class="clipped-box-corner-TR border-blue"></div>
+          <div class="clipped-box-corner-BL border-blue"></div>
         </div>
-        <div class="qualification-tile">
-          <img class="qualification-icon" src="assets/images/qualifications/Covalexshipping_logo.png" />
-          <div class="qualification-title">Covalex Shipping Partner</div>
-        </div>
-        <div class="qualification-tile">
-          <img class="qualification-icon" src="assets/images/qualifications/mt-protection.webp" />
-          <div class="qualification-title">Microtech Commerce Consulting</div>
+        <div id="qualifications-body">
+          <div class="qualifications-body-row">
+            <div class="qualification-tile">
+              <img class="qualification-icon" src="assets/images/qualifications/UEEtrans.png" />
+              <div class="qualification-title">UEE Special Service Award</div>
+            </div>
+            <div class="qualification-tile">
+              <img class="qualification-icon" src="assets/images/qualifications/Covalexshipping_logo.png" />
+              <div class="qualification-title">Covalex Shipping Partner</div>
+            </div>
+            <div class="qualification-tile">
+              <img class="qualification-icon" src="assets/images/qualifications/mt-protection.webp" />
+              <div class="qualification-title">Microtech Commerce Consulting</div>
+            </div>
+          </div>
+          <div class="qualifications-body-row">
+            <div class="qualification-tile reflecting">
+              <img class="qualification-icon" src="assets/images/qualifications/certificate.png" />
+              <div class="qualification-title">Theoretical Degree in Physics</div>
+            </div>
+            <div class="qualification-tile reflecting">
+              <img class="qualification-icon" src="assets/images/qualifications/whammers.png" />
+              <div class="qualification-title">Whammers Rewards Club Member</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="qualifications-body-row">
-        <div class="qualification-tile">
-          <img class="qualification-icon" src="assets/images/qualifications/certificate.png" />
-          <div class="qualification-title">Theoretical Degree in Physics</div>
-        </div>
-        <div class="qualification-tile">
-          <img class="qualification-icon" src="assets/images/qualifications/whammers.png" />
-          <div class="qualification-title">Whammers Rewards Club Member</div>
-        </div>
-      </div>
+      <!-- <div class="highlight-gradient-bottom"></div> -->
     </div>
-    <div class="highlight-gradient-bottom"></div>
   </div>
 
   <!-- <div class="mainColumnItem screen-fill" id="ship-slideshow">
@@ -281,5 +338,6 @@
 
     </div>
   </div>
+</div>
 
 <!-- </div> -->

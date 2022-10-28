@@ -20,11 +20,12 @@ export class CarouselComponent implements OnInit {
   @Input() autoDelay = 0;
 
   selectedIndex = 0;
-  prevIndex = 0;
+  prevIndex = this.imageList.length;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.prevIndex = this.imageList.length;
     if(this.auto){
       if(this.autoDelay > 0){
         setTimeout(() => {
